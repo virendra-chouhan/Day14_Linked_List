@@ -109,5 +109,19 @@ namespace Linked_List
             }
             return null;
         }
+        public int findPoistion(int value)
+        {
+            int position = 0;
+            while (this.head != null)
+            {
+                position++;
+                if (this.head.data == value)
+                {
+                    return position;
+                }
+                this.head = this.head.next;
+            }
+            return position;
+        }
     }
 }
