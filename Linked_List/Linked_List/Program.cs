@@ -27,6 +27,13 @@ namespace Linked_List
             Console.WriteLine("After Deleting Node");
             list1.Display();
             Console.WriteLine("Linkelist Size " + list1.count());
+            List list2 = new List();
+            list2.SortedList(56);
+            list2.SortedList(30);
+            list2.SortedList(70);
+            list2.SortedList(40);
+            Console.Write("Sorted List is :");
+            list2.Display();
             Console.ReadLine();
         }
     }
