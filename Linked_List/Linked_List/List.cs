@@ -7,11 +7,9 @@ namespace Linked_List
     class List
     {
         internal Node head;
-
         internal void Add(int data)
         {
             Node node = new Node(data);
-
             if (this.head == null)
             {
                 this.head = node;
@@ -27,6 +25,7 @@ namespace Linked_List
             }
         }
 
+        // Displays this instance.
         internal void Display()
         {
             Node temp = this.head;
@@ -37,7 +36,7 @@ namespace Linked_List
             }
             while (temp != null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " -> ");
                 temp = temp.next;
             }
         }
