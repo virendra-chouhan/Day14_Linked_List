@@ -8,10 +8,11 @@ namespace Linked_List
         {
             Console.WriteLine("***Welcome_To_LinkedList***");
             List list = new List();
-            Console.WriteLine("Adding into List");
             list.Add(56);
-            list.Add(30);
             list.Add(70);
+            list.Display();
+            Console.WriteLine("\nAfter Inserting Element...");
+            list.InserAtParticularPosition(2, 30);
             list.Display();
             Console.ReadLine();
         }
