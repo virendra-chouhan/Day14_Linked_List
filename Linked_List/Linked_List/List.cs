@@ -97,5 +97,17 @@ namespace Linked_List
             NewNode.next = null;
             return head;
         }
+        public Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
+        }
     }
 }

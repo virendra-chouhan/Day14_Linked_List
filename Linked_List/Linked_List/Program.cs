@@ -14,10 +14,6 @@ namespace Linked_List
             Console.WriteLine("\nAfter Inserting Element...");
             list.InserAtParticularPosition(2, 30);
             list.Display();
-
-            Console.WriteLine("\nAfter Deleting Last Node");
-            list.RemoveLastNode();
-            list.Display();
             Console.ReadLine();
         }
     }
